@@ -1,0 +1,226 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #F0E1B9FF;
+}
+
+h2
+{
+    color: #A13941FF;
+}
+
+.sidenav {
+    height: 100%;
+    width: 230px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #A13941FF;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+.sidenav a {
+    text-align: center;
+    padding: 10px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #F3DB74FF;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #ffffff;
+}
+
+.main {
+    margin-left: 230px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.profile-picture {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circle */
+    margin-bottom: 10px; /* Adds some space below the image */
+    margin-top: 20px; /* Adjust the top margin to center vertically */
+}
+
+.profile-name {
+    color: #000000;
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #F3DB74FF;
+}
+
+.addtask {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .addbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .addbox input { 
+    width: 240%;
+    padding: 10px;
+    border: 1px solid #F3DB74FF;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-bottom: 15px; 
+  }
+  
+  .addbtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #A13941FF;
+    color: #F3DB74FF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+ 
+.addbtn:hover {
+    background-color: rgba(161, 57, 66, 0.702);
+}
+
+/* Table Styles */
+table.tasklist {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+table.tasklist th 
+{
+    background-color: #A13941FF;
+    border: 1px solid #F0E1B9FF;
+    color: #F3DB74FF; 
+}
+
+table.tasklist th,
+table.tasklist td {
+    padding: 12px;
+}
+
+/* Column Widths */
+table.tasklist th.task,
+table.tasklist td.taskdata {
+    width: 30%;
+    text-align: center;
+}
+
+table.tasklist th.category,
+table.tasklist td.categorydata {
+    width: 8%;
+    text-align: center;
+}
+
+table.tasklist th.status,
+table.tasklist td.statusdata {
+    width: 8%;
+    text-align: center;
+}
+
+table.tasklist th.action,
+table.tasklist td.actiondata {
+    width: 20%;
+    text-align: center; 
+}
+
+button {
+    border: none;
+    padding: 8px 12px;
+    margin: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+.donebtn {
+    width: 19%;
+    padding: 5px;
+    background-color: #04ff00;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.donebtn:hover {
+    background-color: #04ff0093;
+}
+
+.todobtn {
+    width: 21%;
+    padding: 5px;
+    background-color: #ffe100;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.todobtn:hover {
+    background-color: #ffe1009b;
+}
+
+.urgentbtn {
+    width: 25%;
+    padding: 5px;
+    background-color: #ff6f00;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.urgentbtn:hover {
+    background-color: #ff6f00ae;
+}
+
+.deletebtn {
+    width: 24%;
+    padding: 5px;
+    background-color: #ff0000ef;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.deletebtn:hover {
+    background-color: #ff00008d;
+}

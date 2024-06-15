@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0E1B9FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loginform {
+    background-color: #A13941FF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #F3DB74FF;
+}
+
+.loginbox {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.loginbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #A13941FF;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.loginbtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #F3DB74FF;
+    color: #A13941FF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.loginbtn:hover {
+    background-color: rgba(243, 220, 116, 0.816);
+}
+
+
+.signup {
+    margin-top: 20px;
+}
+
+.signupbtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #F3DB74FF;
+    color: #A13941FF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signupbtn:hover {
+    background-color: rgba(243, 220, 116, 0.816);
+}
+
